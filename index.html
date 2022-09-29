@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="personal.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+	<title>Homepage</title>
+	
+<!--</head>
+<body>
+	<header>
+		<nav>
+			<a href="https://www.netflix.com/watch/70251232?trackId=14170287">About Me</a>
+			<a href="https://www.netflix.com/watch/70251232?trackId=14170287">Projects</a>
+			<a href="https://www.netflix.com/watch/70251232?trackId=14170287">Contact</a>
+		</nav>
+		<hr>
+		<div class="outer">
+			<div class="inner">
+				<div class="Iam">
+	<b>
+		<div class="innerIam">
+			Hi, I'm<br />
+			Hola, Soy<br />
+			你好, 我是<br />
+			Γεια σου, ειμαι<br />
+			Hallo, ich bin
+		</div>
+	</b>
+		<h1>Chris Thomas</h1> Shuffle through the intro in different languages with a wheel-by animation
+</div>
+
+		<h3><span>BSc Computer Science with Data Science @ University College Dublin</span></h3>
+
+	</div>
+	
+	
+		</div>
+		<hr class="amdivider">
+		
+</header>
+
+<div>
+	<h1>Hello</h1>
+</div>
+
+	
+	
+
+</body> -->
+<body>
+
+	<div id="outer">
+		<div class="inner">
+			<div class="Iam">
+
+
+				<b>
+				  <div class="innerIam">
+				    Hey, I'm <br />
+				    Hola, Soy <br />
+				    你好, 我是 <br />
+				    Hallo, ich bin <br />
+				    Pialli, Ni
+				  </div>
+				</b>
+				<p>Chris Thomas</p>
+
+				<div class="socials">
+						<a href="https://www.linkedin.com/in/christhom0/" class="icon linkedIn">
+							<img src="linkedin-letters.png" class="linkedIn-img"></img>
+						</a>
+						<a href="https://github.com/ChrisThomas0" class="icon github">
+							<img src="github-logo.png" class="github-img"></img>
+						</a>
+						<a href="https://music.apple.com/profile/Satoumu" class="icon appleMusic">
+							<img src="appleMusic.png" class="linkedIn-img"></img>
+						</a>
+				</div>
+					<div class="college">
+						<h3>University College Dublin</h3>
+					</div>
+		</div> 
+	</div>
+	
+</div>
+<div class="scrolltext">
+			<button id="button" onclick="expandSite()"><b>About Me</b>
+				
+			<p><img src="arrow.png" id="arrow"></p></a></button>
+
+				</div>
+		<div id="bottom_section">
+				<div class="about" id="example"><h2>About Me</h2>
+					<h4> <img src="location.png" id="location-icon">Dublin, Ireland</h4>
+					<p>Studying Computer Science with Data Science and a Structured Elective in Structural Linguistics. </p>
+					<p>My current interests include Machine Learning, Natural Language Processing and Web Development. When I'm not doing any of these, I'm probably off running UCD's Internet and Computer Science Society or vibing to playlists containing my superior music taste - You can check it out, my Apple Music is linked above. Let me know if we're listening to any of the same artists 🙌</p>
+					<a id="musictaste" href="mailto:christopher.thomas.durran@gmail.com?subject=Also%20Listening%20To&body=Hey!%20I'm%20Also%20Listening%20To">Tell me if we share any music taste</a>
+				</div>
+					<div class="languages"><ul><lh><h3>Languages</h3></lh><li>C</li><li>Java</li><li>Python</li><li>JavaScript</li><li>SQL</li></ul></div>
+					<div class="technologies"><ul><lh><h3>Libraries & Technologies</h3></lh><li>Tensorflow</li><li>NumPy</li><li>Pandas</li><li>Matplotlib</li><li>Scikit-learn</li><li>JavaFX</li><li>Gradle</li><li>Selenium</li></ul></div>
+		</div>
+</body>
+
+<script type="text/javascript">
+	function expandSite(){
+		
+		document.getElementById("arrow").style.transform="rotate(180deg)"
+		document.getElementById("bottom_section").style.transform="translateY(-350px)"
+		document.getElementById("bottom_section").style.transition="2s"
+			document.getElementById("button").style.transform="translateY(-350px)"
+		document.getElementById("button").style.transition="1.9s"
+		document.getElementById("outer").style.transform="translateY(-260px)"
+		document.getElementById("outer").style.transition="2s"
+		document.getElementById("button").setAttribute('onclick', 'collapseSite()')
+		
+	}
+
+	function collapseSite(){
+	document.getElementById("arrow").style.transform="rotate(0deg)"
+		document.getElementById("bottom_section").style.transform="translateY(0px)"
+		document.getElementById("bottom_section").style.transition="2s"
+		document.getElementById("button").style.transform="translateY(0px)"
+		document.getElementById("button").style.transition="1.9s"
+		document.getElementById("outer").style.transform="translateY(0px)"
+		document.getElementById("outer").style.transition="2s"
+		document.getElementById("button").setAttribute('onclick', 'expandSite()')
+		
+	}
+</script>
+</html>
