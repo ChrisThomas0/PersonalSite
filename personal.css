@@ -372,7 +372,13 @@ width: 45px;
 }
 
 body{
-  overflow: hidden;
+ overflow: hidden; 
   line-height: 25px;
+}
+
+@media (max-width: 1000px) {
+  body{
+    overflow: visible;
+  }
 }
 
